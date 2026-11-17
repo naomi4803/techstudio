@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Practical tech help, built around your next big idea. Browse development, automation, and coaching services.">
+    <title>Tech_studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="#home" aria-label="Made by her"><span class="brand-mark">T<span>·</span></span> made by me</a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#services">SERVICES</a>
+            <a href="#about">ABOUT</a>
+            <a href="#how-it-works">HOW IT WORKS</a>
+        </nav>
+        <button class="cart-trigger" id="open-cart" type="button" aria-label="Open cart">
+            Your bag <span class="cart-count" id="cart-count">0</span>
+        </button>
+    </header>
+
+    <main id="home">
+        <section class="hero page-wrap">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> YOUR FRIENDLY NEIGHBORHOOD TECH PERSON</p>
+                <h1>Big ideas.<br><span>Less tech stress.</span></h1>
+                <p class="hero-intro">A little help goes a long way. Get practical, personal tech support to build your idea, fix a headache, or learn something new.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#services">Find your kind of help <span aria-hidden="true">↘</span></a>
+                    <div class="trust-note"><span class="avatar-stack" aria-hidden="true"><i>✳</i><i>⌘</i><i>↗</i></span><span>Good tech, made human.</span></div>
+                </div>
+                <div class="hero-footnote"><span>INDEPENDENT BY DESIGN</span><span>✳</span><span>HERE FOR YOUR NEXT THING</span></div>
+            </div>
+            <div class="hero-art" aria-label="Colorful abstract illustration of creative technology">
+                <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+                <div class="art-sun"></div>
+                <div class="art-card card-back"><span>IDEA →</span><b>✨</b></div>
+                <div class="art-card card-front"><span class="mini-label">A NOTE FROM YOUR TECH PAL</span><strong>It’s easier<br>than you think.</strong><div class="scribble">✳</div><span class="card-signoff">LET’S MAKE IT HAPPEN ↗</span></div>
+                <div class="art-sticker">GOOD<br>THINGS<br>LOADING <span>↗</span></div>
+                <span class="art-spark spark-a">✳</span><span class="art-spark spark-b">✦</span><span class="art-spark spark-c">·</span>
+            </div>
+        </section>
+
+        <section class="ticker" aria-label="Services offered"><div>WEB DEVELOPMENT <span>✳</span> IT SPECIALIST <span>✳</span> CREATIVE TECH <span>✳</span> 1:1 COACHING <span>✳</span> DATA ANALYST <span>✳</span> TECHNICAL SUPPORT <span>✳</span></div></section>
+
+        <section class="services-section page-wrap" id="services">
+            <div class="section-heading">
+                <div><p class="eyebrow">A LITTLE HELP, A LOT OF POSSIBILITY</p><h2>Pick your next step.</h2></div>
+                <p>Clear, useful tech support with a real person on the other end. Choose a starting point and we’ll take it from there.</p>
+            </div>
+            <div class="service-grid">
+                <article class="service-card card-lilac">
+                    <div class="service-topline"><span class="service-icon">⌘</span><span class="service-type">BUILD · 01</span></div>
+                    <h3>A website that<br>feels like you.</h3>
+                    <p>A polished, easy-to-use website for your business, portfolio, or big new idea.</p>
+                    <div class="service-meta"><span>Starting at</span><strong>$250</strong></div>
+                    <button class="add-button" data-service="website" type="button">Add to bag <span>＋</span></button>
+                </article>
+                <article class="service-card card-peach">
+                    <div class="service-topline"><span class="service-icon">↻</span><span class="service-type">SIMPLIFY · 02</span></div>
+                    <h3>Make busywork<br>disappear.</h3>
+                    <p>Small automations that connect your tools and give you time back.</p>
+                    <div class="service-meta"><span>Starting at</span><strong>$180</strong></div>
+                    <button class="add-button" data-service="automation" type="button">Add to bag <span>＋</span></button>
+                </article>
+                <article class="service-card card-mint">
+                    <div class="service-topline"><span class="service-icon">↗</span><span class="service-type">LEARN · 03</span></div>
+                    <h3>One-on-one,<br>on your terms.</h3>
+                    <p>A relaxed 60-minute session to untangle a problem or get unstuck.</p>
+                    <div class="service-meta"><span>60 minutes</span><strong>$85</strong></div>
+                    <button class="add-button" data-service="coaching" type="button">Add to bag <span>＋</span></button>
+                </article>
+                <article class="service-card card-yellow">
+                    <div class="service-topline"><span class="service-icon">✳</span><span class="service-type">GET CLARITY · 04</span></div>
+                    <h3>Fresh eyes on<br>your tech idea.</h3>
+                    <p>A focused review with honest feedback and an actionable plan forward.</p>
+                    <div class="service-meta"><span>Starting at</span><strong>$120</strong></div>
+                    <button class="add-button" data-service="review" type="button">Add to bag <span>＋</span></button>
+                </article>
+            </div>
+            <p class="pricing-note">Every project is a little different. Add a service to your bag to start a conversation—no payment until we’ve agreed on the details.</p>
+        </section>
+
+        <section class="about-band" id="about">
+            <div class="about-inner page-wrap">
+                <div class="about-symbol" aria-hidden="true"><span>✳</span><b>TECH<br>FOR<br>REAL LIFE</b></div>
+                <div class="about-copy"><p class="eyebrow">NO GATEKEEPING. NO GEEK SPEAK.</p><h2>Technology should<br>work <em>for you.</em></h2></div>
+                <div class="about-description"><p>Whether you’re starting from scratch or smoothing out the rough edges, you deserve tech help that meets you where you are.</p><a href="#how-it-works">Here’s how we’ll work together <span>↗</span></a></div>
+            </div>
+        </section>
+
+        <section class="steps-section page-wrap" id="how-it-works">
+            <div class="section-heading steps-heading"><div><p class="eyebrow">NO SURPRISES, JUST GOOD WORK</p><h2>Easy as one, two, done.</h2></div><p>We’ll keep it simple from the first hello to the finished thing.</p></div>
+            <div class="steps-grid">
+                <article><span class="step-number">01</span><h3>Tell me what’s up.</h3><p>Pick a service and share a few details. Half-formed ideas are welcome here.</p></article>
+                <article><span class="step-number">02</span><h3>Make a plan together.</h3><p>We’ll chat about what you need, agree on scope and pricing, and set a timeline.</p></article>
+                <article><span class="step-number">03</span><h3>Make it real.</h3><p>We’ll work through it together, with clear updates and no mystery tech jargon.</p></article>
+            </div>
+        </section>
+
+        <section class="cta-band page-wrap"><div><p class="eyebrow">NOT SURE WHERE TO START?</p><h2>That’s a great place to start.</h2></div><a class="button button-light" href="mailto:hello@example.com?subject=Let%27s%20talk%20tech">Say hello <span>↗</span></a></section>
+    </main>
+
+    <footer class="footer page-wrap"><a class="brand" href="#home"><span class="brand-mark">m<span>·</span></span> made by me</a><p>Good tech should feel good, too.</p><span>© 2026 MADE BY ME</span></footer>
+
+    <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+    <aside class="cart-panel" id="cart-panel" aria-labelledby="cart-title" aria-hidden="true">
+        <div class="cart-header"><div><p class="eyebrow">YOUR NEXT GOOD THING</p><h2 id="cart-title">Your bag <span id="cart-title-count">(0)</span></h2></div><button class="close-cart" id="close-cart" type="button" aria-label="Close bag">×</button></div>
+        <div class="cart-items" id="cart-items"><div class="empty-cart"><span>✳</span><h3>Your bag is taking a breather.</h3><p>Add a service to start a conversation about what you need.</p><button class="button button-dark" id="browse-services" type="button">Browse services</button></div></div>
+        <div class="cart-footer" id="cart-footer" hidden><p>We’ll confirm the details and final price before any work begins.</p><a class="button button-dark checkout-button" id="checkout-button" href="mailto:lupalonaomi@gmail.com?subject=Let%27s%20talk%20tech">Start a conversation <span>↗</span></a></div>
+    </aside>
+</body>
+</html>
